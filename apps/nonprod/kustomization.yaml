@@ -4,7 +4,7 @@ resources:
   - git::https://github.com/Mathpro1412/platform-k8s-app-config-nonprod.git//manifests?ref=main
 images:
   - name: anonja/js-web-app
-    newTag: 4e4d700
+    newTag: e537fb2
 commonLabels:
   app.kubernetes.io/managed-by: kustomize
   app.kubernetes.io/env: nonprod
