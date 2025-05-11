@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - git::https://github.com/Mathpro1412/platform-k8s-app-config-prod.git//manifests?ref=main
+
+images:
+  - name: anonja/js-web-app
+    newTag: 74e8f87
+
+commonLabels:
+  app.kubernetes.io/managed-by: kustomize
+  app.kubernetes.io/env: prod
