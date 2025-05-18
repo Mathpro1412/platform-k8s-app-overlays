@@ -4,7 +4,7 @@ resources:
   - https://github.com/Mathpro1412/platform-k8s-app-config-prod.git//manifests?ref=main
 images:
   - name: anonja/js-web-app
-    newTag: 509d9bd
+    newTag: 4b40e21
 labels:
   - pairs:
       app.kubernetes.io/managed-by: kustomize
